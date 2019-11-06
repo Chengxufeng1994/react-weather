@@ -55,7 +55,7 @@ const App = () => {
     return (
         <ThemeProvider theme={theme[currentTheme]}>
             <Container >
-                <Router>
+                <Router basename={process.env.PUBLIC_URL}>
                     <Switch>
                         <Route exact path="/"
                             render={(props) => (
